@@ -1,3 +1,5 @@
+#include "inserir_perguntas.h"
+
 void menu_principal() {
   int opcao;
 
@@ -12,8 +14,11 @@ void menu_principal() {
     printf("[OPCAO]");
     gotoxy(198, 46);
     scanf("%d", &opcao);
-    if (opcao != 0)
-      printfxy(1, 1, "OPCAO ERRADA, POR FAVOR SELECIONE UMA OPCAO CORRETA!");
+    // if (opcao != 0 || opcao != 1)
+    //   printfxy(1, 1, "OPCAO ERRADA, POR FAVOR SELECIONE UMA OPCAO CORRETA!");
+    // else{
+      inserir_perguntas();
+    // }
   } while(opcao != 0);
 
 }
